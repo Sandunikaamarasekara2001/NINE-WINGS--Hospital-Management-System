@@ -1,0 +1,58 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+{% block content%}
+<style>
+    body{
+    background-color:rgba(210, 209, 209, 0.716);
+}
+</style>
+
+{% if error == "no" %}
+<script>
+alert('Record Saved Successfully')
+window.location="{% url 'view_appoinment'%}"
+</script>
+{% endif %}
+
+{% if error == "yes" %}
+<script>
+alert("Invalid Login, Try again!")
+</script>
+{% endif %}
+
+
+<div class="container">
+<h2 class="text-center">Add Appoinment</h2>
+    <form  method="POST">
+        {% csrf_token %}
+        <label>Doctor Name: </label>
+        <select name="doctor" class="form-control">
+            {% for i in doctor%}
+            <option value="{{i.Name}}">{{i.Name}}</option>
+            {% endfor%}
+
+
+        </select>
+        <label>Patient Name: </label>
+        <select name="patient" class="form-control">
+            {% for i in patient%}
+            <option value="{{i.name}}">{{i.name}}</option>
+            {% endfor%}
+
+
+        </select>
+        <label>Date: </label>
+        <input type="date" class="form-control" name="date">   
+        <label>Time: </label>
+        <input type="time" class="form-control" name="time">     
+        <input type="submit" value="submit" class="form-contrl btn btn-primary mt-4" style="margin-left: 500px;">     
+    </form>
+</div>
+
+
+
+
+
+
+{% endblock content%}
+{% include 'footer.html' %}

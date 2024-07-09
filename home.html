@@ -1,0 +1,233 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+      body{
+        background-color:rgba(210, 209, 209, 0.716);
+      }
+      .container{
+         width: 100%;
+      }
+</style>
+<body>
+
+<div class="container">
+  <h2 class="text-center text-primary">NINE WINGS</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="static/images/new1.jpeg" class="d-block w-100">
+        <div class="carousel-caption">
+            <h2 style="color: black">Postoperative Care</h2>
+            <p style="color: black; font-size: 20px;">At NINE WINGS, our Postoperative Care services are designed to ensure a smooth and comfortable recovery following surgery. Our dedicated team of healthcare professionals provides comprehensive care tailored to your individual needs, including pain management, wound care, monitoring for complications, and physical rehabilitation. We focus on promoting healing, preventing infections, and supporting your overall well-being.
+                Our compassionate approach and state-of-the-art facilities ensure that you receive the highest quality care during your recovery, helping you return to your daily life as quickly and safely as possible.
+               </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="static/images/main4.webp" class="d-block w-100">
+        <div class="carousel-caption">
+            <h2 style="color: black;">Neonatal Intensive Care Unite</h2>
+            <p style="font-size: 20px; color: black;">At NINE WINGS, our Postoperative Care services are designed to ensure a smooth and comfortable recovery following surgery. Our dedicated team of healthcare professionals provides comprehensive care tailored to your individual needs, including pain management, wound care, monitoring for complications, and physical rehabilitation. We focus on promoting healing, preventing infections, and supporting your overall well-being.
+                Our compassionate approach and state-of-the-art facilities ensure that you receive the highest quality care during your recovery, helping you return to your daily life as quickly and safely as possible.
+               </p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="static/images/2.webp" class="d-block w-100">
+        <div class="carousel-caption">
+            <h2>Surgery</h2>
+            <p style="font-size: 20px;">At NINE WINGS, our Surgery Services provide advanced, comprehensive care for a wide range of surgical needs. Our highly skilled surgeons and medical team utilize state-of-the-art technology and minimally invasive techniques to ensure the best possible outcomes for our patients. From preoperative assessment and personalized surgical planning to postoperative care and rehabilitation, we are committed to delivering exceptional care at every step. Our focus on patient safety, precision, and comfort ensures that you 
+                receive the highest standard of surgical treatment, tailored to your individual health needs.
+                  </p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!------introduction------>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="" alt="">
+        </div>
+        <div class="col-md-4" id="intro-text">
+            <h1 class="text-center">
+                <h1 class="text-center text-primary">Welcome to Hospital<br> Management System</h1>
+            </h1>
+            <p class="text-justify">
+                <h5 style="font-size: 30px;">
+                    NINE WINGS, integrates and automates administrative tasks within 
+                    healthcare facilities, including patient management, scheduling, records keeping, and billing. It enhances 
+                    operational efficiency, reduces paperwork, 
+                    and improves overall patient care by providing a centralized platform for managing critical hospital functions.
+                </h5>
+            </p>
+            <img src="" alt="">
+        </div>
+        <div class="col-md-4">
+            <div class="container-fluid">
+                <br>
+                <button class="btn btn-lg btn-block">
+                    <a href="add_appoinment/" class="nav-link" style="font-size: 30px;"><i class="fa fa-calender-minus-0">Request Appoinment</i></a>
+                </button>
+                <button class="btn btn-lg btn-block">
+                    <a href="view_doctor/" class="nav-link" style="font-size: 30px;"><i class="fa fa-calender-minus-0">Find Doctors</i></a>
+                </button>
+                <button class="btn btn-lg btn-block">
+                    <a href="https://maps.app.goo.gl/qPCzXDbpu3gSqSUa6"class="nav-link" style="font-size: 30px;"><i class="fa fa-calender-minus-0">Location</i></a>
+                </button>
+                <button class="btn btn-lg btn-block">
+                  <a href="tel:+94111212123" class="nav-link" style="font-size: 30px;"><i class="fa fa-calender-minus-0">Emergency Contact</i></a>
+                </button>                                                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------our services-------->   
+<div class="main">
+
+    <h1 class="text-primary text-center">Our Services</h1>
+    <hr>
+    
+    <h2 class="text-primary text-center">"Empowering Health, One Service at a Time"</h2>
+
+    
+    <!--  Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="static/images/eme.jpeg"  style="width:100%">
+          <h3>Emergency</h3>
+          <p style="font-size: 20px;">At NINE WINGS, our Emergency Services are dedicated to providing rapid, expert care when it matters most. Our state-of-the-art emergency department is equipped with the latest medical technology and staffed by a team of highly trained professionals ready to handle any critical situation. We prioritize swift and accurate diagnosis, immediate treatment, and compassionate support for patients and their families. Our commitment to excellence ensures that 
+            every patient receives the highest standard of care, 24/7, giving you peace of mind in any emergency.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content">
+          <img src="static/images/pharmacy.jpeg"  style="width:100%">
+          <h3>Pharmacy</h3>
+          <p style="font-size: 20px;">At NINE WINGS, our Pharmacy Services are designed to provide patients with convenient, 
+            reliable, and comprehensive pharmaceutical care. Our experienced pharmacists work closely with healthcare
+             providers to ensure the safe and effective use of medications. We offer a wide range of prescription and over-the-counter medications, personalized medication counseling, and streamlined prescription refills. Our commitment to excellence and patient care ensures that you receive the highest quality service, helping you manage your health with confidence and ease.
+
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content">
+          <img src="static/images/endoscopy.jpeg"  style="width:100%">
+          <h3>Endoscopy</h3>
+          <p style="font-size: 20px;">At NINE WINGS, our Endoscopy Services provide advanced diagnostic and therapeutic procedures to ensure accurate and effective care. Utilizing state-of-the-art endoscopic technology, our skilled specialists perform minimally invasive examinations of the digestive tract, respiratory system, and other internal organs. This allows for precise detection and treatment of various conditions with minimal discomfort and quicker recovery times for patients. Our dedicated team is committed to delivering compassionate care and ensuring that each patient 
+            receives the highest standard of medical attention in a comfortable and safe environment.</p>
+        </div>
+      </div>
+      
+
+    </div>
+    <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="static/images/echo.jpeg"  style="width:100%">
+            <h3>ECHO Services</h3>
+            <p style="font-size: 20px;">At NINE WINGS, our Echo Services offer comprehensive and precise echocardiographic evaluations to assess the health of your heart. Utilizing advanced ultrasound technology, our experienced cardiologists and technicians provide detailed imaging to diagnose and monitor various cardiac conditions. Our state-of-the-art echo services include transthoracic echocardiograms (TTE), transesophageal echocardiograms (TEE), and stress echocardiograms, ensuring accurate and timely diagnosis. We are committed to delivering exceptional patient care, with
+                 a focus on comfort, accuracy, and swift results to guide your treatment plan effectively.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="static/images/r.jpeg"  style="width:100%">
+            <h3>Digital X-ray</h3>
+            <p style="font-size: 20px;">At NINE WINGS, our Digital X-Ray Services provide high-quality imaging for accurate and efficient diagnosis. Utilizing the latest digital radiography technology, our skilled radiologists and technicians deliver clear and detailed images with reduced radiation exposure. This advanced system enables us to quickly diagnose a wide range of conditions, from fractures to lung diseases, ensuring prompt and effective treatment. Our commitment to patient safety and comfort, combined with our state-of-the-art technology, 
+                ensures that you receive the best possible care in a timely manner.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="static/images/lab.jpeg"  style="width:100%">
+            <h3>Lab</h3>
+            <p style="font-size: 20px;">At NINE WINGS, our Laboratory Services are dedicated to providing precise and timely diagnostic testing to support your healthcare needs. Our state-of-the-art laboratory is equipped with advanced technology and staffed by experienced professionals who ensure the highest standards of accuracy and reliability. We offer a comprehensive range of tests, including blood work, pathology, microbiology, and genetic testing, to assist in the diagnosis, monitoring, and treatment of various medical conditions. Our commitment to quality and efficiency ensures that you receive fast, accurate results, enabling your healthcare provider to deliver the best possible care.</p>
+          </div>
+        </div>
+
+      </div>
+      
+ 
+    <!-- END MAIN -->
+    </div>
+
+
+
+<div class="main">
+
+    <h1 class="text-primary text-center">Our Team of Experts</h1>
+    <h2 class="text-primary text-center">Meet Our Team</h2>
+    <hr>
+    
+    <h2 class="text-primary text-center">"Empowering Health, One Service at a Time"</h2>
+
+    
+    <!--  Gallery Grid -->
+    <div class="row">
+        <div class="column">
+            <div class="content mb-4" style="padding-bottom: 20px;">
+              <img src="static/images/p2.webp"  style="width:100%">
+              <h3>Dr. Niki Charls</h3>
+              <p>MBBS,MS(TU), FMAS, DMAS</p>
+            </div>
+          </div>
+      <div class="column">
+        <div class="content">
+          <img src="static/images/p1.jpeg"  style="width:100%">
+          <h3>Dr. Nisha Silva</h3>
+          <p>MBBS,MS(TU), FMAS, DMAS</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="static/images/p3.webp"  style="width:100%">
+          <h3>Dr. Charls Perera</h3>
+          <p>MBBS,MS(TU), FMAS, DMAS</p>
+        </div>
+      </div>
+    </div>
+</div>  
+
+
+</body>
+</html>
+{% include 'footer.html' %}
+

@@ -1,0 +1,72 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+<h1 class="text-center pt-2 mt-2">About Us </h1>  
+<h2 class="text-center  pt-2 mt-2">Who we are & What we do</h2> 
+<style>
+    .mydivstyle:hover{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(-2.25px);
+    }
+    body{
+        background-color:rgba(210, 209, 209, 0.716);
+    }
+</style>
+{% block content %}
+<div class="row">
+    <div class="col-md-6 mydivstyle" style="padding-left: 100px; padding-top: 80px;">
+        <h1 class="strong">Who we are</h1>
+        <p style="font-size: 20px;">At <b>NINE WINGS</b>, we are a team of dedicated professionals committed to 
+            revolutionizing healthcare management. Our expertise spans healthcare administration, information technology, 
+            and customer service, enabling us to create innovative solutions that address the complex needs of modern hospitals. With a 
+            deep understanding of the challenges faced by healthcare providers, we strive to deliver systems that enhance operational e
+            fficiency, improve patient outcomes, and simplify administrative tasks. Our mission is to empower hospitals with the tools 
+            they need to provide exceptional care while maintaining the highest standards of efficiency and security. Driven by our 
+            passion for healthcare and technology, we are your trusted partners in building a healthier future.</p>
+
+
+    </div>
+    <div class="col-md-6 mydivstyle" style="padding-top: 80px;">
+        <h1 class="strong">What we do</h1>
+        <p class="lead" style="font-size: 20px;">At <b>NINE WINGS</b>, we streamline and enhance healthcare operations by 
+            providing comprehensive, integrated solutions that manage all aspects of hospital administration. Our system covers
+             patient registration, appointment scheduling, electronic health records, billing, inventory management, and more. 
+             We aim to improve patient care, optimize resource 
+            utilization, and ensure seamless coordination among healthcare professionals. 
+            By leveraging cutting-edge technology, we deliver efficient, user-friendly, and secure solutions tailored to 
+            meet the unique needs of hospitals and healthcare providers.</p>
+
+
+    </div>
+    <div class="col-md-6 pt-5 mydivstyle" style="padding-left: 100px;">
+        <h1 class="strong">Our Team</h1>
+        <p class="lead" style="font-size: 20px;">Our team at<b> NINE WINGS </b>comprises a diverse group of 
+            experts with a shared passion for healthcare innovation. We bring together professionals from various backgrounds, 
+            including healthcare administration, software development, data analytics, and customer support. Each member of our team 
+            is dedicated to leveraging their unique skills and experiences to create solutions that make a tangible difference in the 
+            healthcare industry. We prioritize collaboration, continuous learning, and a patient-centric approach in everything we do. 
+            Our collective expertise and commitment drive us to deliver cutting-edge technology that enhances hospital operations and 
+            improves patient care. Together, we are committed to advancing
+             healthcare management and supporting our clients every step of the way.</p>
+
+
+    </div>
+    <div class="col-md-6 mydivstyle" style="padding-top: 80px;">
+        <h1 class="strong">Our Vission</h1>
+        <p class="lead" style="font-size: 20px;">Our vision at <b>NINE WINGS </b>is to revolutionize healthcare 
+            by creating an integrated, intelligent, and patient-centric management system that empowers hospitals to deliver 
+            exceptional care. We envision a future where healthcare providers can seamlessly manage all aspects of hospital 
+            operations through a unified platform that enhances efficiency, reduces administrative burdens, and improves patient
+             outcomes. By leveraging advanced technology, data analytics, and innovative solutions, we aim to transform the
+              healthcare landscape, making it more accessible, efficient, and effective for everyone. Our commitment is to
+               support hospitals in achieving excellence in patient care while fostering a collaborative and transparent 
+               healthcare ecosystem.
+
+        </p>
+
+
+    </div>
+  </div>
+
+
+{% endblock content %}
+{% include 'footer.html' %}

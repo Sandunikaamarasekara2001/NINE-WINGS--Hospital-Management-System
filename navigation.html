@@ -1,0 +1,62 @@
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding-right: 40px;">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#" style="font-size: 17px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Hospital Mnaagement System-NINE WINGS</a>
+  
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto text-uppercase" style="font-size: 20px;">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </li> 
+
+
+
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Doctor
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="{% url 'view_doctor' %}">View Doctor</a>
+          <a class="dropdown-item" href="{% url 'add_doctor' %}">Add Doctor</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Patient
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="{% url 'view_patient' %}">View Patient</a>
+          <a class="dropdown-item" href="{% url 'add_patient' %}">Add Patient</a>
+          
+        </div>
+      </li>  
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Appoinment
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="{% url 'view_appoinment' %}">View Appoinment</a>
+          <a class="dropdown-item" href="{% url 'add_appoinment' %}">Add Appoinment</a>
+          
+        </div>
+      </li>   
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'admin_login' %}">Login</a>
+      </li>            
+    
+
+  
+    </ul>
+  </nav>
+
+  

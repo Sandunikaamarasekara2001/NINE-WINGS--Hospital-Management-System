@@ -1,0 +1,44 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+{% block content%}
+<style>
+    body{
+    background-color:rgba(210, 209, 209, 0.716);
+}
+</style>
+
+{% if error == "no" %}
+<script>
+alert('Record Saved Successfully')
+window.location="{% url 'view_doctor'%}"
+</script>
+{% endif %}
+
+{% if error == "yes" %}
+<script>
+alert("Invalid Login, Try again!")
+</script>
+{% endif %}
+
+
+<div class="container">
+<h2 class="text-center">Add Doctor</h2>
+<form  method="post">
+    {% csrf_token %}
+    <label>Doctor Name: </label>
+    <input type="text" class="form-control" name="Name">
+    <label>Mobile: </label>
+    <input type="int" class="form-control" name="mobile">   
+    <label>Special: </label>
+    <input type="text" class="form-control" name="special">     
+    <input type="submit" value="Add" class="form-contrl btn btn-primary mt-4" style="margin-left: 500px;">     
+</form>
+</div>
+
+
+
+
+
+
+{% endblock content%}
+{% include 'footer.html' %}
